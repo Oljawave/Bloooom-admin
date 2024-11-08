@@ -1,7 +1,7 @@
 <template>
     <div class="navbar">
       <div class="navbar-left">
-        <router-link to="" class="back-button">
+        <router-link to="" class="close-button">
           <span class="iconify" data-icon="lets-icons:arrow-alt-left-alt" style="color: black; font-size: 34px;"></span>
         </router-link>
         <div class="search-bar">
@@ -76,27 +76,28 @@
 
   
   <style scoped>
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 60px;
-    background-color: white;
-    border-bottom: 1px solid #000;
-    padding: 0 20px;
-    width: calc(100% - 300px); 
-    margin-left: 250px;
-    position: fixed;
-    top: 0;
-    z-index: 10;
-  }
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  background-color: white;
+  border-bottom: 1px solid #000;
+  padding: 0 15px;
+  width: calc(100% - var(--sidebar-width, 280px));
+  margin-left: var(--sidebar-width, 250px);
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  flex-wrap: wrap;
+}
   
   .navbar-left {
     display: flex;
     align-items: center;
   }
   
-  .back-button {
+  .close-button {
     color: black;
     font-size: 18px;
     margin-right: 20px;
@@ -190,5 +191,7 @@
 .dropdown-item:hover {
   background-color: #f0f0f0; 
 }
+
+
 
 </style>

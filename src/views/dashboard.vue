@@ -5,7 +5,7 @@
     <div class="content">
       <h1 class="dashboard-title">ДЭШБОРД</h1>
       <div class="stats">
-        <StatBox value="1232" trend="+18" label="Количество активных заказов" style="background-color: black; color: white;" />
+        <StatBox value="1232" trend="+18" label="Количество активных заказов" />
         <StatBox value="89" trend="-8" label="Активные пользователи" />
         <StatBox value="673" trend="+11" label="Количество активных флористов" />
         <StatBox value="45" trend="+4" label="Продажи на сегодня" />
@@ -27,7 +27,7 @@
       </div>
     </div>
   </div>
-</template>
+</template> 
 
 <script>
 import Sidebar from '@/components/layout/Sidebar.vue';
